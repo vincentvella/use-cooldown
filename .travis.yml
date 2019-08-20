@@ -1,22 +1,22 @@
 language: node_js
 node_js:
-- 8
+  - 8
 cache:
   directories:
-  - node_modules
+    - node_modules
 before_deploy:
-- yarn run predeploy
+  - yarn run predeploy
 deploy:
-  provider: npm
-  email: vincevella0@gmail.com
-  api_key:
-    secure: FPVaiKXz06rRFIFcWFEXMucCbwR6HU4DViQEyO8QidNZ/YnmrtToTm05kT5Rqja+07kQZpV43ZToI/S1XI1wiYGt4xVJO2l9oZLZlG2K4eYETMF28J3rSiuVIQmHZqy3nyF4w9gVIAqyKoaNvLZVbtbnMm56DnkcJr5qUwenTDT1wIku++8AmH4O3uU6s/30lrhCu2E+0FvjLCWEMKh5e42RU93fhvRH0+41v74mQSrARF/M+sKSWCxqkbQbjweL4BbpXFpwvyD9A/Ifbr6BX6r7yoB8kKIxsgnQkJzgb2UkTcXsWGaoWNK+BJV8ABFAtYwfVPCbSrTBn7jqlL87tStbTxJnvPs2jfXjponhvZEymJC91ZNOGqx6TR24no+VGvPwPI/3qy6ZtYyXLXuQuWWa4p1OxVY2hlH2OjofdbfCZoVIBshTL1oE6wrA3pTJgsi12HircK+NrZEnQn9PcdR+l0YObucYGUUH62LPK2M06Qzec2lCjldjUBxHKv0eBwJevrp5fo8B3Sqp1ogq1P/HLR5NVNHFxucw/ZfFhAYKR3aCvoxlLLIViXNzrZNLt3sVOEK96M6GWt3RknGRUyIr30U4ab4kUrDQ3vsQx67MvhxYuzmikASk/6tTAA1NnDnO7OeHn9CT05+KrjBhegHUTuGzesjZCEzDwxDOg2w=
-  on:
-    tags: true
-    repo: vincentvella/use-cooldown
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: example/build
-  on:
-    branch: master
+  - provider: npm
+    email: vincevella0@gmail.com
+    api_key:
+      secure: FPVaiKXz06rRFIFcWFEXMucCbwR6HU4DViQEyO8QidNZ/YnmrtToTm05kT5Rqja+07kQZpV43ZToI/S1XI1wiYGt4xVJO2l9oZLZlG2K4eYETMF28J3rSiuVIQmHZqy3nyF4w9gVIAqyKoaNvLZVbtbnMm56DnkcJr5qUwenTDT1wIku++8AmH4O3uU6s/30lrhCu2E+0FvjLCWEMKh5e42RU93fhvRH0+41v74mQSrARF/M+sKSWCxqkbQbjweL4BbpXFpwvyD9A/Ifbr6BX6r7yoB8kKIxsgnQkJzgb2UkTcXsWGaoWNK+BJV8ABFAtYwfVPCbSrTBn7jqlL87tStbTxJnvPs2jfXjponhvZEymJC91ZNOGqx6TR24no+VGvPwPI/3qy6ZtYyXLXuQuWWa4p1OxVY2hlH2OjofdbfCZoVIBshTL1oE6wrA3pTJgsi12HircK+NrZEnQn9PcdR+l0YObucYGUUH62LPK2M06Qzec2lCjldjUBxHKv0eBwJevrp5fo8B3Sqp1ogq1P/HLR5NVNHFxucw/ZfFhAYKR3aCvoxlLLIViXNzrZNLt3sVOEK96M6GWt3RknGRUyIr30U4ab4kUrDQ3vsQx67MvhxYuzmikASk/6tTAA1NnDnO7OeHn9CT05+KrjBhegHUTuGzesjZCEzDwxDOg2w=
+    on:
+      tags: true
+      repo: vincentvella/use-cooldown
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    local_dir: example/build
+    on:
+      branch: master
