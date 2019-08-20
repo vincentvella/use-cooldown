@@ -1,4 +1,4 @@
-import { useCooldown } from './';
+import { useCooldown } from '.';
 
 describe('useMyHook', () => {
   it('is truthy', () => {
