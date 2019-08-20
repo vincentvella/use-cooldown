@@ -10,6 +10,9 @@
     "react-scripts": "^3.0.1",
     "use-cooldown": "link:.."
   },
+  "devDependencies": {
+    "typescript": "^3.2.4"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
