@@ -1,13 +1,17 @@
-import React from 'react'
-
-import { useMyHook } from 'use-cooldown'
+import React from 'react';
+import { useCooldown } from 'use-cooldown';
 
 const App = () => {
-  const example = useMyHook()
+  const [cooledDown, setCooledDown] = useCooldown(1000);
+  const startCooldown = () => setCooledDown(false);
   return (
     <div>
-      {example}
+      <div>{`${cooledDown}`}</div>
+      <button disabled={!cooledDown} onClick={startCooldown}>
+        Begin Cooldown
+      </button>
     </div>
-  )
-}
-export default App
+  );
+};
+
+export default App;
