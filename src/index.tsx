@@ -1,23 +1,16 @@
 import * as React from 'react';
 
-export const useMyHook = () => {
-  let [{
-    counter
-  }, setState] = React.useState<{
-    counter: number;
-  }>({
-    counter: 0
-  });
-
+export const useCooldown = (cooldownTime: number) => {
+  const [cooledDown, setCooledDown] = React.useState<boolean>(true);
   React.useEffect(() => {
-    let interval = window.setInterval(() => {
-      counter++;
-      setState({counter})
-    }, 1000)
-    return () => {
-      window.clearInterval(interval);
-    };
-  }, []);
-
-  return counter;
+    let cooldownTimer: number;
+    if (!cooledDown) {
+      cooldownTimer = window.setTimeout(
+        () => setCooledDown(true),
+        cooldownTime
+      );
+    }
+    return () => window.clearTimeout(cooldownTimer);
+  }, [cooledDown]);
+  return [cooledDown, setCooledDown];
 };
