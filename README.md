@@ -14,7 +14,7 @@ npm install --save use-cooldown
 
 ```tsx
 import * as React from 'react';
-import { useMyHook } from 'use-cooldown';
+import { useCooldown } from 'use-cooldown';
 
 const Example = () => {
   const [cooledDown, setCooledDown] = useCooldown(1000); // pass in length of cooldown in ms
