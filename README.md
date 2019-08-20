@@ -2,7 +2,7 @@
 
 > A React hook implementation for client-side rate limiting.
 
-[![NPM](https://img.shields.io/npm/v/use-cooldown.svg)](https://www.npmjs.com/package/use-cooldown) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/use-cooldown.svg)](https://www.npmjs.com/package/use-cooldown) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![Build Status](https://travis-ci.org/vincentvella/use-cooldown.svg?branch=master)](https://travis-ci.org/vincentvella/use-cooldown)
 
 ## Install
 
