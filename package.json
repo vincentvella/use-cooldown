@@ -1,6 +1,6 @@
 {
   "name": "use-cooldown",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A React hook implementation for client-side rate limiting.",
   "author": "vincentvella",
   "license": "MIT",
