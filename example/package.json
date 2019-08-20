@@ -11,6 +11,7 @@
     "use-cooldown": "link:.."
   },
   "devDependencies": {
+    "@types/react": "link:../node_modules/@types/react",
     "typescript": "^3.2.4"
   },
   "scripts": {
