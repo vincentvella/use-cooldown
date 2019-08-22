@@ -1,0 +1,19 @@
+.container {
+  padding: 10px;
+  text-align: center;
+}
+
+.actionContainer {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #98a8a8;
+  display: inline-block;
+}
+
+.text {
+  padding: 5px;
+}
+
+.textInput {
+  margin: 5px;
+}

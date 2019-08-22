@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 type useCooldownType = (
-  cooldownTime: number
+  cooldownTime?: number
 ) => [boolean, React.Dispatch<React.SetStateAction<boolean>>];
 
 export const useCooldown: useCooldownType = (cooldownTime: number = 500) => {
